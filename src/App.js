@@ -1,20 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Meals from './Body/Meals';
+import Cart from './Cart/Cart';
 
-
-import MealsSummary from './Body/MealsSummary';
-import MealItemForm from './Body/MealItemForm';
-import DUMMY_MEALS from './Body/dummy-meals';
 import Header from './Head/Header';
 
 function App() {
   
   
   return (
-    <div >
+    <Fragment >
+      <Cart />
       <Header />
-      <MealsSummary/>
-      <MealItemForm items={DUMMY_MEALS}/>
-    </div>
+      <Meals />
+    </Fragment>
   )
 }
 
